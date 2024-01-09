@@ -9,7 +9,6 @@ echo "[job loader][info] mise à jour de la structure"
 tmstp="$(date '+%Y-%m-%d-%H:%M:%S')"
 arch="${archivepath}/$(date +%Y)/$(date +%B)/${tmstp}.tar"
 path=$(dirname $arch)
-echo "$path"
 echo -e "\033[1;34m[job loader][job started] début de la tache d'archivage\033[0m"
 ./logger.sh 0 0 "$path" "début de la tache d'archivage"
 echo "[job loader][info] envoi de la tâche de création d'archive"
